@@ -1,0 +1,26 @@
+타입 변환
+
+	#자동 타입 변환(Promotion)
+	작은 타입의 값을 큰 타입으로 옮기는 작업
+	byte(1) < short(2) < int(4) < long(8)
+	float(4) < double(8)
+	정수형 < 실수형 (실수형의 표현 범위가 더 넓음 >>> 지수 비트 존재)
+	작은 공간의 물건들은 큰 공간에도 저장 가능함
+
+	#강제 타입 변환(Casting)
+	개발자가 직접 타입 변환
+	큰 타입의 값을 작은 타입으로 옮기는 작업
+	큰 타입 값을 작은 타입 값으로 옮길 때는 저장되는 타입의 범위가 같거나 작아야 함
+	큰 공간의 물건을 작은 공간에 담으면 손실이 발생함
+	
+기본타입범위상수(wrapper class)
+	byte >>> Byte.MIN_VALUE(최소값), Byte.MAX_VALUE(최대값)
+	short >>> Short.MIN_VALUE(최소값), Short.MAX_VALUE(최대값)
+	int >>> Integer.MIN_VALUE(최소값), Integer.MAX_VALUE(최대값)
+	long >>> Long.MIN_VALUE(최소값), Long.MAX_VALUE(최대값)
+	
+	float >>> Float.MIN_VALUE(최소값), Float.MAX_VALUE(최대값)
+	double >>> Double.MIN_VALUE(최소값), Double.MAX_VALUE(최대값)
+	
+	##boolean, char 타입은 최소 최대 상수 없음
+	

@@ -1,0 +1,21 @@
+Instance Member(객체 멤버)
+
+class A{
+	int field;	//인스턴스 필드
+	void method(){}	//인스턴스 메소드
+}
+
+A a = new A();	//인스턴스 생성
+a.field = 5;	//인스턴스 필드 접근
+a.method();		//인스턴스 메소드 사용
+//인스턴스 멤버는 반드시 객체 생성해야 접근 가능
+
+Static Member(정적 멤버)
+class B{
+	static int field;	//정적 필드
+	static void method(){}	//정적 메소드
+}
+B.field = 5;
+B.method();
+//인스턴스 생성하지 않고 클래스이름.필드, 클래스이름.메소드 방식으로 접근 가능
+//정적(Static) : 클래스 이름으로 접근 가능
