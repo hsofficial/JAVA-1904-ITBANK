@@ -1,2 +1,2 @@
-# JAVA-1904-ITBANK
+# JAVA-1904
  수업자료
