@@ -1,0 +1,18 @@
+Package and Access Modifier(패키지 / 접근제한자)
+
+1.패키지
+프로젝트 개발 시 여러 클래스 제작, 클래스 관리
+클래스 이름이 동일할 때 클래스를 구분할 수 있는 식별자(Identifier)로 사용
+project.package.ClassName.class
+
+2.접근제한자
+class 설계할 때 외부 혹은 동일 pkg에서 접근할 수 있는 멤버와 접근불가 멤버 정확히 작성
+	>>데이터 무결성을 지켜야 함.
+	무결성 - 데이터의 결점이 없는 상태
+	
+public > protected > default > private
+
+public: 내부 외부 패키지와 클래스에서 사용 가능
+protected : 내부 외부 패키지의 자식(sub / 하위) 클래스에서만 사용 가능
+default : 내부(동일) 패키지의 클래스간 사용가능 (접근제한자 미 사용시 기본값)
+private : 내부 클래스에서만 사용 가능
